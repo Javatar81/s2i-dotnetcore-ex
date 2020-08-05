@@ -20,11 +20,13 @@ namespace app.Controllers
 
         public IActionResult Index()
         {
+             _logger.LogInformation("Called Privacy");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            _logger.LogInformation("Called View");
             return View();
         }
 
